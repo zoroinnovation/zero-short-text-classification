@@ -3,31 +3,33 @@
 
 
 =========================
-Template 1: Direct Classification Style
+Template 1: Direct Classification Style 
 =========================
-Classify the sentiment of the following sentence:
+Classify the sentiment of the following sentence strictly as either Positive or Negative.
+
+Sentence: "{sentence}"
+
+Respond with exactly one word: Positive or Negative.
+
+Answer:
+
+
+=========================
+Template 2: Natural Language Question Style 
+=========================
+What is the sentiment expressed in the following sentence?
+
 "{sentence}"
 
-Options: Positive or Negative.
+Choose only one from [Positive, Negative]. Do not explain your answer.
 
 Answer:
 
 
 =========================
-Template 2: Natural Language Question Style
+Template 3: FLAN-T5 Style Instruction 
 =========================
-What is the sentiment of the following text?
-Text: "{sentence}"
-
-Answer using only one word: Positive or Negative.
-
-Answer:
-
-
-=========================
-Template 3: FLAN-T5 Style Instruction
-=========================
-Instruction: Classify the sentiment of the input sentence as Positive or Negative.
+Instruction: Determine whether the sentiment in the given sentence is Positive or Negative. Output only one of those two words.
 
 Input: {sentence}
 
@@ -35,16 +37,17 @@ Answer:
 
 
 =========================
-Template 4: ChatGPT Friendly Compact Format
+Template 4: Chat-Friendly Compact Format
 =========================
 Text: {sentence}
-Sentiment: (Positive / Negative)
 
-Answer:
+Sentiment: (Choose one: Positive / Negative)
+
+Answer (one word only):
 
 
 =========================
-Template 5: Few-Shot Format (for comparison)
+Template 5: Few-Shot Format 
 =========================
 Q: "I absolutely loved the acting and the storyline."
 A: Positive
@@ -53,4 +56,5 @@ Q: "The film was a waste of time and money."
 A: Negative
 
 Q: "{sentence}"
-A:
+A: (Positive / Negative)?
+
