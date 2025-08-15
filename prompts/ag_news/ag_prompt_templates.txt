@@ -1,0 +1,58 @@
+# AG News Prompt Templates for Zero-Shot Text Classification
+# Usage: Replace {news_article} with the actual news article text from the dataset
+
+=========================
+Template 1: Direct Classification Style
+=========================
+Classify the following news article into one of these categories: World, Sports, Business, or Science/Technology.
+
+Article: "{news_article}"
+
+Respond with exactly one word: World, Sports, Business, or Science/Technology.
+
+Answer:
+
+
+=========================
+Template 2: Natural Language Question Style
+=========================
+What category does the following news article belong to?
+
+"{news_article}"
+
+Choose only one from [World, Sports, Business, Science/Technology]. Do not explain your answer.
+
+Answer:
+
+
+=========================
+Template 3: Instructional Style
+=========================
+Instruction: Read the news article and classify it into one of the following categories: World, Sports, Business, or Science/Technology. Output only one of these four words.
+
+Input: {news_article}
+
+Answer:
+
+
+=========================
+Template 4: Chat-Friendly Compact Format
+=========================
+Text: {news_article}
+
+Category: (Choose one: World / Sports / Business / Science/Technology)
+
+Answer (one word only):
+
+
+=========================
+Template 5: Few-Shot Format
+=========================
+Q: "The stock market saw a significant rise today as major companies reported strong earnings."
+A: Business
+
+Q: "The national team secured a thrilling victory in the championship game last night."
+A: Sports
+
+Q: "{news_article}"
+A: (World / Sports / Business / Science/Technology)?
