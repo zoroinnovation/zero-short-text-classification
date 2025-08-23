@@ -1,0 +1,4 @@
+| Model        | Dataset | Accuracy | F1-score | Date       |
+| ------------ | ------- | -------- | -------- | ---------- |
+| BERT-base    | AG News | 91.2     | 90.8     | 2025-08-23 |
+| RoBERTa-base | SST-2   | 93.5     | 93.1     | 2025-08-23 |
