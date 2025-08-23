@@ -1,0 +1,44 @@
+SST-2 Evaluation Logs
+=====================
+
+Model: google/flan-t5-large
+Samples Evaluated: 20
+
+Metrics:
+  accuracy: 0.95
+  f1: 0.9474
+  precision: 1.0
+  recall: 0.9
+  model: google/flan-t5-large
+
+Sample Predictions:
+Sentence: it s a charming and often affecting journey
+True: Positive, Pred: Positive, Raw: N/A
+---
+Sentence: unflinchingly bleak and desperate
+True: Negative, Pred: Negative, Raw: N/A
+---
+Sentence: allows us to hope that nolan is poised to embark a major career as a commercial yet inventive filmmaker
+True: Positive, Pred: Positive, Raw: N/A
+---
+Sentence: the acting costumes music cinematography and sound are all astounding given the production s austere locales
+True: Positive, Pred: Positive, Raw: N/A
+---
+Sentence: it s slow very very slow
+True: Negative, Pred: Negative, Raw: N/A
+---
+Sentence: although laced with humor and a few fanciful touches the film is a refreshingly serious look at young women
+True: Positive, Pred: Positive, Raw: N/A
+---
+Sentence: a sometimes tedious film
+True: Negative, Pred: Negative, Raw: N/A
+---
+Sentence: or doing last year s taxes with your exwife
+True: Negative, Pred: Negative, Raw: N/A
+---
+Sentence: you do nt have to know about music to appreciate the film s easygoing blend of comedy and romance
+True: Positive, Pred: Positive, Raw: N/A
+---
+Sentence: in exactly 89 minutes most of which passed as slowly as if i d been sitting naked on an igloo formula 51 sank from quirky to jerky to utter turkey
+True: Negative, Pred: Negative, Raw: N/A
+---

@@ -1,0 +1,82 @@
+# TREC Prompt Templates for Zero-Shot Question Classification
+
+# Usage: Replace {question} with actual question text when constructing final prompt
+
+
+=========================
+Template 1: Instruction Style
+=========================
+Classify the type of this question:
+"{question}"
+
+Options:
+A. Description  
+B. Entity  
+C. Abbreviation  
+D. Human  
+E. Location  
+F. Numeric  
+
+Answer:
+
+
+=========================
+Template 2: Natural Style
+=========================
+What category does this question belong to?  
+Question: "{question}"  
+
+Categories: Description, Entity, Abbreviation, Human, Location, Numeric  
+
+Answer:
+
+
+=========================
+Template 3: Q&A Style Few-Shot
+=========================
+Q: "What is the capital of Japan?"  
+A: Location
+
+Q: "Who invented the telescope?"  
+A: Human
+
+Q: "What does NASA stand for?"  
+A: Abbreviation
+
+Q: "Why is the sky blue?"  
+A: Description
+
+Q: "{question}"  
+A:
+
+
+=========================
+Template 4: FLAN-T5 Format
+=========================
+Instruction: Classify the question into one of the following categories:  
+Description, Entity, Abbreviation, Human, Location, Numeric  
+
+Input: {question}  
+
+Answer:
+
+
+=========================
+Template 5: GPT-style Instruction Prompt
+=========================
+You are an AI trained for question classification.  
+Your task is to assign the correct label to the given question.  
+The label must be one of the following: Description, Entity, Abbreviation, Human, Location, Numeric.  
+
+Question: {question}  
+Label:
+
+
+=========================
+Template 6: Compact Style for Chat Models
+=========================
+Classify: {question}  
+Choices: Description / Entity / Abbreviation / Human / Location / Numeric  
+
+Answer:
+

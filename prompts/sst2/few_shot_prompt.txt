@@ -1,0 +1,45 @@
+# SST-2 Few-Shot Prompt File (with Edge Cases)
+
+
+Task: Classify the sentiment of a movie review as either Positive or Negative.  
+- Handle sarcasm, mixed reviews, and very short reviews carefully.  
+- If both pros and cons are present, base the decision on the overall tone.  
+- Keep the label strictly "Positive" or "Negative".  
+
+=====================
+Few-Shot Examples
+=====================
+
+Review: "The movie was an absolute delight, full of charm and great performances."
+Sentiment: Positive
+
+Review: "This was a boring and predictable film with no originality." 
+Sentiment: Negative
+
+Review: "Loved it!"
+Sentiment: Positive
+
+Review: "Oh great, another masterpiece of boredom."
+Sentiment: Negative
+
+Review: "The visuals were stunning, but the story made no sense and ruined the experience."
+Sentiment: Negative
+
+Review: "A charming movie with heartfelt performances."
+Sentiment: Positive
+
+Review: "At least the popcorn was better than the movie."
+Sentiment: Negative
+
+=====================
+Now classify
+=====================
+
+Review: "Not terrible, but far from good."
+Sentiment:
+
+Review: "The plot was weak and the characters were poorly developed."
+Sentiment:
+
+Review: "The soundtrack was beautiful, but everything else felt flat."
+Sentiment:

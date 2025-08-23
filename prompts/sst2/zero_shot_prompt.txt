@@ -1,0 +1,57 @@
+# SST-2 Zero-Shot Prompt Templates (with Edge Case Handling)
+# Usage: Replace {sentence} with the actual input sentence
+# Labels: Only "Positive" or "Negative" are valid outputs
+# Note: Handle tricky cases like sarcasm, negations, mixed wording, and implicit sentiment.
+
+=================================================
+Template 1: Direct Classification Style
+=================================================
+Classify the sentiment of the following sentence strictly as either Positive or Negative.
+Pay special attention to sarcasm, negations, and misleading wording.
+
+Sentence: "{sentence}"
+
+Answer (one word only): 
+
+
+=================================================
+Template 2: Natural Language Question Style
+=================================================
+What is the sentiment expressed in the following sentence?
+
+"{sentence}"
+
+Choose only one from [Positive, Negative]. 
+Do not explain your answer.
+Handle tricky cases:
+- Sarcasm (e.g., "Great, another three-hour meeting...")
+- Negations (e.g., "Not bad at all" = Positive)
+- Mixed wording (focus on overall tone)
+
+Answer: 
+
+
+=================================================
+Template 3: FLAN-T5 Style Instruction
+=================================================
+Instruction: Determine whether the sentiment in the given sentence is Positive or Negative. 
+Output only one of those two words. 
+Handle edge cases such as sarcasm, double negatives, or phrases that sound neutral but imply sentiment.
+
+Input: "{sentence}"
+
+Answer: 
+
+
+=================================================
+Template 4: Chat-Friendly Compact Format
+=================================================
+Text: "{sentence}"
+
+Sentiment (Positive / Negative). 
+Interpret sarcasm, negations, and subtle tone carefully.
+
+Answer:
+
+
+

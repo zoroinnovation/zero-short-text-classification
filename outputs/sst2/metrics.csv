@@ -1,0 +1,2 @@
+accuracy,f1,precision,recall,model
+0.95,0.9474,1.0,0.9,google/flan-t5-large
