@@ -136,7 +136,7 @@ Models used:
 ## 🚀 How to Run
 1. Clone the repo:
    
-   git clone https://github.com/yourusername/prompt-engineering-classification.git
+   git clone https://github.com/zoroinnovation/zero-short-text-classification.git
    cd prompt-engineering-classification
 
 
