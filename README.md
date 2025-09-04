@@ -126,9 +126,6 @@ Models used:
 │
 ├── .gitignore
 ├── README.md
-├── requirements.txt
-├── test_hf_api.ipynb
-└── test_openai_api.ipynb
 
 
 ---
